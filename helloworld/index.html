@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script data-main="app" src="../API/lib/require.js"></script>
+
+<script type="text/javascript">
+  var m; // quick access for console
+  require(['./app'], function (app) {     
+    app(function (motion) {           
+      m = motion;
+      // Hook up buttons UI
+      var playBtn = document.getElementById('play');
+      var pauseBtn = document.getElementById('pause');
+      var resetBtn = document.getElementById('reset');
+      playBtn.onclick = function () {motion.update(null, 1.0, 0.0);};
+      pauseBtn.onclick = function () {motion.update(null, 0.0, 0.0);};
+      resetBtn.onclick = function () {motion.update(0.0, 0.0, 0.0);};
+      // Hook up text UI
+      var value = document.getElementById('value');
+      motion.on("timeupdate", function () {value.innerHTML = motion.query().pos.toFixed(2)});
+    });
+  });
+</script>
+
+</head>
+<body>
+  <h1>Shared Motion</h1>
+  <p>
+    This provides primitive controls the motion and visulised its state. Make sure to open the page in multiple tabs/windows to appreciate how easily it may be shared.
+  </p>
+  <p> 
+    You may also control the motion from the developer console :   m.update(position, velocity, acceleration);
+  </p>
+  <button id="play">Play/Resume</button>
+  <button id="pause">Pause</button>
+  <button id="reset">Reset</button>
+  <div id="value"><div>
+</body>
+</html>
