@@ -77,7 +77,7 @@ The generic structure of mediascape repositories is:
 ### Documentation
 [Top][]
 
-Please find detailed documentation in [API Doc](API/Sharedmotion/README.md) and [DEMO Doc](helloworld/Sharedmotion/README.md)
+Please find detailed documentation in [API Doc](API/Sharedmotion/README.md) and [DEMO Doc](helloworld/README.md)
 
 ### Authors
 [Top][]
