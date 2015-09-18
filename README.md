@@ -52,7 +52,7 @@ Shared Motion has been proposed for Web standardization, by MediaScape partners 
 
 A commercial company Motion Corporation has developed a production quality implementation of Shared Motion, and agreed to provide MediaScape with free of charge usage (limited to research purposes) throughout the project period. Norut has licenced the use of Motion Corporation services on behalf of MediaScape, and has also adapted the client-side library to fit API's defined in MediaScape.
 
-These files in this library will not be maintained. Instead use of scripts maintained by Motion Corporation is recommended.
+We recommend using scripts provided by Motion Corporation at the following link.
 
 * [http://mcorp.no/lib/mcorp-2.0.js](http://mcorp.no/lib/mcorp-2.0.js)
 
